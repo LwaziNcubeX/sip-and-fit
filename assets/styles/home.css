@@ -99,3 +99,17 @@ body {
   display: flex;
   flex-direction: column;
 }
+
+.products {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 28px;
+}
+
+.products-item {
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  width: 23%;
+}
