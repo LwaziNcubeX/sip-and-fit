@@ -10,7 +10,7 @@ body {
   align-items: center;
   justify-content: space-between;
   height: 70px;
-  padding: 0 3px;
+  padding: 0 20px;
 }
 
 .auth-button {
@@ -20,4 +20,82 @@ body {
   padding: 10px 20px;
   cursor: pointer;
   font-weight: bold;
+  border-radius: 30px;
+}
+
+.nav-menu {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #212121;
+}
+
+.nav-item:hover {
+  color: #f0a202;
+  text-decoration: underline;
+}
+
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 18px;
+}
+
+.hero-button-left {
+  background: #fff;
+  color: #212121;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  border-color: #f0a202;
+  border-style: dotted;
+}
+
+.hero-button-right {
+  background: #212121;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+}
+
+.discover-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+}
+
+.more-products-button {
+  background: #ffffff;
+  color: #212121;
+  border: none;
+  padding: 5px 15px;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  border: 2px solid #212121;
+  gap: 8px;
+}
+
+.discover-section {
+  display: flex;
+  flex-direction: column;
 }
