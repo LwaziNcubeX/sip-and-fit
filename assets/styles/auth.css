@@ -17,13 +17,13 @@ body {
     min-height: 100vh;
 }
 
-.login {
+.auth {
     min-height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
 
-.login-form {
+.auth-form {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -31,7 +31,7 @@ body {
     background: linear-gradient(135deg, #fffdf8, #fff7ed);
 }
 
-.login-card {
+.auth-card {
     width: 100%;
     background: var(--card);
     backdrop-filter: blur(10px);
@@ -98,7 +98,7 @@ input:focus {
     color: #00F58A;
 }
 
-.login-button {
+.auth-button {
     width: 100%;
     padding: 14px 16px;
     border: none;
@@ -111,7 +111,7 @@ input:focus {
     border-radius: 14px;
 }
 
-.login-button:hover {
+.auth-button:hover {
     background: #04c772;
 }
 
@@ -135,8 +135,16 @@ input:focus {
     padding: 40px;
 }
 
+.register-hero {
+    position: relative;
+    background: url("/assets/images/strawberry.png") center/cover no-repeat;
+    display: flex;
+    align-items: flex-end;
+    padding: 40px;
+}
+
 @media (max-width: 900px) {
-    .login {
+    .auth {
         grid-template-columns: 1fr;
     }
 }

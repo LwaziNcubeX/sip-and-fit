@@ -4,26 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/auth.css">
-    <title>Login</title>
+    <title>Register</title>
 </head>
 <body>
-    <main class="login">
-        <section class="login-hero">
+    <main class="auth">
+        <section class="register-hero">
             <div class="hero-content">
 <h1>CITRUSWAVE</h1>
-            <p>Sign in to continue and stay connected</p>
+            <p>Sign up to continue and stay connected</p>
             </div>
             
         </section>
 
-        <section class="login-form">
-            <div class="login-card">
+        <section class="auth-form">
+            <div class="auth-card">
                 <div class="brand">
                     <img src="/assets/images/dark.svg" alt="CitrusWave Logo" height="45" />
                     
-                    <p>Login to your account</p>
+                    <p>Create an account</p>
                 </div>
                 <form>
+                    <div class="form-div">
+                        <label for="name">Name</label>
+                        <input id="name" type="text" placeholder="Enter your full name" required>
+                    </div>
                     <div class="form-div">
                         <label for="email">Email</label>
                         <input id="email" type="email" placeholder="Enter your email" required>
@@ -38,12 +42,12 @@
     <input type="checkbox">
     Remember me
 </label>
-<a href="#">Forgot password?</a>
+
 
                     </div>
-                    <button type="submit" class="login-button">Login</button>
+                    <button type="submit" class="auth-button">Register</button>
                 </form>
-                <p class="signup-text">Don't have an account? <a href="/auth/register.html">Sign Up</a></p>
+                <p class="signup-text">Already have an account? <a href="/auth/login.html">Sign In</a></p>
             </div>
         </section>
     </main>
