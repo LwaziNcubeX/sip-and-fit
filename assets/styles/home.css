@@ -14,7 +14,7 @@ body {
 }
 
 .auth-button {
-  background: #f0a202;
+  background: #00F58A;
   color: #212121;
   border: none;
   padding: 10px 20px;
@@ -36,7 +36,7 @@ body {
 }
 
 .nav-item:hover {
-  color: #f0a202;
+  color: #00F58A;
   text-decoration: underline;
 }
 
@@ -45,6 +45,10 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 30px;
+}
+
+.hero-left {
+  width: 50%;
 }
 
 .hero-buttons {
@@ -60,7 +64,7 @@ body {
   cursor: pointer;
   font-weight: bold;
   border-radius: 30px;
-  border-color: #f0a202;
+  border-color: #00F58A;
   border-style: dotted;
 }
 
