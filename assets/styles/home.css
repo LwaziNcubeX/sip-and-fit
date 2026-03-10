@@ -1,7 +1,12 @@
-body {
-  background: #f5f5f5;
+* {
   margin: 0;
   padding: 0;
+  outline: 0;
+}
+body {
+  background: #f5f5f5;
+
+
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -45,10 +50,22 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 30px;
+  height: 80vh;
 }
 
 .hero-left {
   width: 50%;
+}
+
+.hero-right {
+  width: 30%;
+  background-image: url(/assets/images/strawberry.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 1;
+  border-radius: 30px;
+  margin-right: 90px;
 }
 
 .hero-buttons {
@@ -106,14 +123,58 @@ body {
 
 .products {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0px 28px;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.products-item {
+.product-item {
+  width: 280px;
   background: #fff;
-  padding: 30px;
-  border-radius: 10px;
-  width: 23%;
+  text-align: start;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
 }
+
+.product-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12);
+}
+
+.product-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.product-item h3 {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.product-item p {
+  padding: 0 15px 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.product-price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+button {
+  border: none;
+  padding: 10px 16px;
+  color: #fff;
+  background: #212121;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 25px;
+  transition: background 0.2s ease;
+}
+
+

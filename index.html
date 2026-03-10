@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="assets/styles/home.css" />
-    <title>32Sips - Juice Bar</title>
+    <title>CitrusWave - Juice Bar</title>
   </head>
   <body>
     <nav class="navbar">
-      <img src="assets/images/logo.svg" alt="32SIPS Logo" height="35" />
+      <img src="assets/images/dark.svg" alt="CitrusWave Logo" height="35" />
 
       <ul class="nav-menu">
         <li><a href="/" class="nav-item">Home</a></li>
@@ -17,7 +17,7 @@
         <li><a href="contact/index.html" class="nav-item">Contact Us</a></li>
       </ul>
 
-      <button class="auth-button">GET STARTED</button>
+      <button class="auth-button"><a href="auth/login.html">GET STARTED</a></button>
     </nav>
     <main>
       <div class="hero">
@@ -32,11 +32,9 @@
             <button class="hero-button-right">Learn More</button>
           </div>
         </div>
-        <img
-          src="assets/images/juice.png"
-          alt="Sip & Fit Logo"
-          height="500"
-        />
+        <div class="hero-right">
+        </div>
+        
       </div>
 
       <div class="discover-section">
@@ -65,7 +63,7 @@
         <div class="products">
           <div class="product-item">
             <div>
-              <img src="assets/images/placeholder.jpg" width="200" />
+              <img src="assets/images/lemon.png" width="200" />
               <span class="price">$9.99</span>
             </div>
 
@@ -83,8 +81,8 @@
           </div>
           <div class="product-item">
             <div>
-              <img src="assets/images/placeholder.jpg" width="200" />
-              <span class="price">$9.99</span>
+              <img src="assets/images/lemon.png" width="200" />
+              <span class="product-price">$9.99</span>
             </div>
 
             <h3>Product 1</h3>
@@ -101,14 +99,14 @@
           </div>
           <div class="product-item">
             <div>
-              <img src="assets/images/placeholder.jpg" width="200" />
-              <span class="price">$9.99</span>
+              <img src="assets/images/lemon.png" width="200" />
+              <span class="product-price">$9.99</span>
             </div>
 
             <h3>Product 1</h3>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
 
-            <div>
+            <div class="product-item-buttons">
               <button href="/cart/add/1" class="add-to-cart-button">
                 Add to Cart
               </button>
@@ -119,8 +117,8 @@
           </div>
           <div class="product-item">
             <div>
-              <img src="assets/images/placeholder.jpg" width="200" />
-              <span class="price">$9.99</span>
+              <img src="assets/images/lemon.png" width="200" />
+              <span class="product-price">$9.99</span>
             </div>
 
             <h3>Product 1</h3>
@@ -137,6 +135,74 @@
           </div>
         </div>
       </div>
+
+      <section>
+        <h3>Why choose US</h3>
+        <div class="reasons">
+          <div class="reason-item">
+            <img src="assets/images/fresh.svg" width="50" />
+            <h4>Fresh Ingredients</h4>
+            <p>
+              We use only the freshest fruits and ingredients to create our
+              delicious juices.
+            </p>
+          </div>
+          <div class="reason-item">
+            <img src="assets/images/fast.svg" width="50" />
+            <h4>Fast Service</h4>
+            <p>
+              Our efficient team ensures you get your juice quickly, without
+              compromising quality.
+            </p>
+          </div>
+          <div class="reason-item">
+            <img src="assets/images/healthy.svg" width="50" />
+            <h4>Healthy Options</h4>
+            <p>
+              We offer a variety of healthy juice options to suit every taste
+              and dietary need.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="how its made">  
+        <h3>How It's Made</h3>
+        <div class="process">
+          <div class="process-step">
+            <img src="assets/images/step1.svg" width="50" />
+            <h4>Step 1: Selection</h4>
+            <p>
+              We carefully select the freshest fruits and ingredients for our
+              juices.
+            </p>
+          </div>
+          <div class="process-step">
+            <img src="assets/images/step2.svg" width="50" />
+            <h4>Step 2: Preparation</h4>
+            <p>
+              Our skilled team prepares the ingredients with care to ensure the
+              best flavor.
+            </p>
+          </div>
+          <div class="process-step">
+            <img src="assets/images/step3.svg" width="50" />
+            <h4>Step 3: Juicing</h4>
+            <p>
+              We use state-of-the-art juicing techniques to extract maximum
+              flavor and nutrients.
+            </p>
+          </div>
+          <div class="process-step">
+            <img src="assets/images/step4.svg" width="50" />
+            <h4>Step 4: Serving</h4>
+            <p>
+              Your juice is served fresh and ready to enjoy, either in-store or
+              for takeout.
+            </p>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
