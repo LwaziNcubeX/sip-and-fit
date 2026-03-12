@@ -16,10 +16,14 @@ body {
   justify-content: space-between;
   height: 70px;
   padding: 0 20px;
+  position: sticky;
+  z-index: 1;
+  top: 0;
+  background: #fff;
 }
 
 .auth-button {
-  background: #00F58A;
+  background: #fec000;
   color: #212121;
   border: none;
   padding: 10px 20px;
@@ -41,7 +45,7 @@ body {
 }
 
 .nav-item:hover {
-  color: #00F58A;
+  color: #fec000;
   text-decoration: underline;
 }
 
@@ -81,7 +85,7 @@ body {
   cursor: pointer;
   font-weight: bold;
   border-radius: 30px;
-  border-color: #00F58A;
+  border-color: #fec000;
   border-style: dotted;
 }
 
