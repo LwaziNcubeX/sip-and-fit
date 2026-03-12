@@ -3,45 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="CitrusWave is a juice bar serving fresh, healthy, and delicious fruit drinks."
+    />
     <link rel="stylesheet" href="assets/styles/home.css" />
     <title>CitrusWave - Juice Bar</title>
   </head>
   <body>
-    <nav class="navbar">
-      <img src="assets/images/logo.svg" alt="CitrusWave Logo" height="46" />
+    <header>
+      <nav class="navbar" aria-label="Main navigation">
+        <a href="/" aria-label="CitrusWave Home">
+          <img src="assets/images/logo.svg" alt="CitrusWave Logo" height="46" />
+        </a>
 
-      <ul class="nav-menu">
-        <li><a href="/" class="nav-item">Home</a></li>
-        <li><a href="/menu/index.html" class="nav-item">Menu</a></li>
-        <li><a href="/about/index.html" class="nav-item">About Us</a></li>
-        <li><a href="/contact/index.html" class="nav-item">Contact Us</a></li>
-      </ul>
+        <ul class="nav-menu">
+          <li><a href="/" class="nav-item" aria-current="page">Home</a></li>
+          <li><a href="/menu/index.html" class="nav-item">Menu</a></li>
+          <li><a href="/about/index.html" class="nav-item">About Us</a></li>
+          <li><a href="/contact/index.html" class="nav-item">Contact Us</a></li>
+        </ul>
 
-      <button class="auth-button"><a href="auth/login.html">GET STARTED</a></button>
-    </nav>
+        <a href="auth/login.html" class="auth-button">GET STARTED</a>
+      </nav>
+    </header>
+
     <main>
-      <div class="hero">
+      <section class="hero">
         <div class="hero-left">
-          <h1>CitrusWave</h1>
+          <p>CitrusWave</p>
+          <h1>Fresh Juice Made Simple</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-            rem debitis sint quos beatae possimus accusantium voluptas eligendi.
+            Enjoy refreshing drinks made from carefully selected fruits and
+            ingredients. At CitrusWave, every sip is crafted to taste fresh,
+            natural, and satisfying.
           </p>
+
           <div class="hero-buttons">
-            <button class="hero-button-left">SHOP NOW</button>
-            <button class="hero-button-right">Why Choose Us</button>
+            <a href="/menu/index.html" class="hero-button-left">SHOP NOW</a>
+            <a href="/about/index.html" class="hero-button-right">Why Choose Us</a>
           </div>
         </div>
-        <div class="hero-right">
-        </div>
-        
-      </div>
 
-      <div class="discover-section">
+        <div class="hero-right" aria-hidden="true"></div>
+      </section>
+
+      <section class="discover-section" aria-labelledby="discover-title">
         <div class="discover-nav">
-          <h2>Discover Our Range</h2>
+          <h2 id="discover-title">Discover Our Range</h2>
           <div>
-            <button class="more-products-button">
+            <a href="/menu/index.html" class="more-products-button">
               More
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -54,123 +65,127 @@
                 stroke-linecap="round"
                 stroke-linejoin="round"
                 class="lucide lucide-chevron-right-icon lucide-chevron-right"
+                aria-hidden="true"
               >
                 <path d="m9 18 6-6-6-6" />
               </svg>
-            </button>
+            </a>
           </div>
         </div>
+
         <div class="products">
-          <div class="product-item">
+          <article class="product-item">
             <div class="product-cover">
               <span class="price">$9.99</span>
             </div>
+            <h3>Orange Burst</h3>
+            <p>A bright and refreshing orange juice packed with natural citrus flavor.</p>
+          </article>
 
-            <h3>Product 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-
-          </div>
-          <div class="product-item">
-             <div class="product-cover">
+          <article class="product-item">
+            <div class="product-cover">
               <span class="price">$9.99</span>
             </div>
+            <h3>Lemon Fresh</h3>
+            <p>A crisp, zesty lemon drink with a clean and energizing taste.</p>
+          </article>
 
-            <h3>Product 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-
-          </div>
-          <div class="product-item">
-             <div class="product-cover">
+          <article class="product-item">
+            <div class="product-cover">
               <span class="price">$9.99</span>
             </div>
+            <h3>Mango Glow</h3>
+            <p>A smooth tropical blend with the rich sweetness of ripe mangoes.</p>
+          </article>
 
-            <h3>Product 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-           
-          </div>
-          <div class="product-item">
-             <div class="product-cover">
+          <article class="product-item">
+            <div class="product-cover">
               <span class="price">$9.99</span>
             </div>
-
-            <h3>Product 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-
-
-          </div>
+            <h3>Berry Splash</h3>
+            <p>A juicy fruit blend with a sweet, vibrant, and refreshing finish.</p>
+          </article>
         </div>
-      </div>
+      </section>
 
-      <section>
-        <h3>Why choose US</h3>
+      <section aria-labelledby="why-choose-title">
+        <h2 id="why-choose-title">Why Choose Us</h2>
+
         <div class="reasons">
-          <div class="reason-item">
-            <img src="assets/images/fresh.svg" width="50" />
-            <h4>Fresh Ingredients</h4>
+          <article class="reason-item">
+            <img src="assets/images/fresh.svg" alt="Fresh ingredients icon" width="50" />
+            <h3>Fresh Ingredients</h3>
             <p>
               We use only the freshest fruits and ingredients to create our
               delicious juices.
             </p>
-          </div>
-          <div class="reason-item">
-            <img src="assets/images/fast.svg" width="50" />
-            <h4>Fast Service</h4>
+          </article>
+
+          <article class="reason-item">
+            <img src="assets/images/fast.svg" alt="Fast service icon" width="50" />
+            <h3>Fast Service</h3>
             <p>
               Our efficient team ensures you get your juice quickly, without
               compromising quality.
             </p>
-          </div>
-          <div class="reason-item">
-            <img src="assets/images/healthy.svg" width="50" />
-            <h4>Healthy Options</h4>
+          </article>
+
+          <article class="reason-item">
+            <img src="assets/images/healthy.svg" alt="Healthy options icon" width="50" />
+            <h3>Healthy Options</h3>
             <p>
               We offer a variety of healthy juice options to suit every taste
               and dietary need.
             </p>
-          </div>
+          </article>
         </div>
       </section>
 
-      <section class="how its made">  
-        <h3>How It's Made</h3>
+      <section class="how its made" aria-labelledby="how-made-title">
+        <h2 id="how-made-title">How It’s Made</h2>
+
         <div class="process">
-          <div class="process-step">
-            <img src="assets/images/step1.svg" width="50" />
-            <h4>Step 1: Selection</h4>
+          <article class="process-step">
+            <img src="assets/images/step1.svg" alt="Selection step icon" width="50" />
+            <h3>Step 1: Selection</h3>
             <p>
               We carefully select the freshest fruits and ingredients for our
               juices.
             </p>
-          </div>
-          <div class="process-step">
-            <img src="assets/images/step2.svg" width="50" />
-            <h4>Step 2: Preparation</h4>
+          </article>
+
+          <article class="process-step">
+            <img src="assets/images/step2.svg" alt="Preparation step icon" width="50" />
+            <h3>Step 2: Preparation</h3>
             <p>
               Our skilled team prepares the ingredients with care to ensure the
               best flavor.
             </p>
-          </div>
-          <div class="process-step">
-            <img src="assets/images/step3.svg" width="50" />
-            <h4>Step 3: Juicing</h4>
+          </article>
+
+          <article class="process-step">
+            <img src="assets/images/step3.svg" alt="Juicing step icon" width="50" />
+            <h3>Step 3: Juicing</h3>
             <p>
               We use state-of-the-art juicing techniques to extract maximum
               flavor and nutrients.
             </p>
-          </div>
-          <div class="process-step">
-            <img src="assets/images/step4.svg" width="50" />
-            <h4>Step 4: Serving</h4>
+          </article>
+
+          <article class="process-step">
+            <img src="assets/images/step4.svg" alt="Serving step icon" width="50" />
+            <h3>Step 4: Serving</h3>
             <p>
               Your juice is served fresh and ready to enjoy, either in-store or
               for takeout.
             </p>
-          </div>
+          </article>
         </div>
       </section>
     </main>
+
+    <footer>
+      <p>&copy; 2026 CitrusWave. All rights reserved.</p>
+    </footer>
   </body>
 </html>
