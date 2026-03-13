@@ -1,168 +1,149 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="/assets/styles/menu.css">
-<title>CitrusWave Menu</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/assets/styles/menu.css" />
+    <title>CitrusWave Menu</title>
+  </head>
 
-<body>
+  <body>
+    <nav class="navbar">
+      <img src="/assets/images/logo.svg" alt="CitrusWave Logo" height="46" />
 
-<nav class="navbar">
-  <img src="/assets/images/logo.svg" alt="CitrusWave Logo" height="46"/>
+      <ul class="nav-menu">
+        <li><a href="/" class="nav-item">Home</a></li>
+        <li><a href="/menu/index.html" class="nav-item">Menu</a></li>
+        <li><a href="/about/index.html" class="nav-item">About Us</a></li>
+        <li><a href="/contact/index.html" class="nav-item">Contact Us</a></li>
+      </ul>
 
-  <ul class="nav-menu">
-    <li><a href="/" class="nav-item">Home</a></li>
-    <li><a href="/menu/index.html" class="nav-item">Menu</a></li>
-    <li><a href="/about/index.html" class="nav-item">About Us</a></li>
-    <li><a href="/contact/index.html" class="nav-item">Contact Us</a></li>
-  </ul>
+      <button class="auth-button">
+        <a href="/auth/login.html">GET STARTED</a>
+      </button>
+    </nav>
 
-  <button class="auth-button"><a href="/auth/login.html">GET STARTED</a></button>
-</nav>
+    <main>
+      <section class="menu-hero">
+        <h1>Our Juice Menu</h1>
+        <p>Freshly pressed drinks made from natural fruits.</p>
+      </section>
 
-<main>
+      <section class="menu-category">
+        <h2>Citrus Classics</h2>
 
-<section class="menu-hero">
-<h1>Our Juice Menu</h1>
-<p>Freshly pressed drinks made from natural fruits.</p>
-</section>
+        <div class="products">
+          <div class="product-item">
+            <div class="product-cover lemon"></div>
+            <h3>Lemon Fresh</h3>
+            <p>A crisp lemon juice with bright citrus flavor.</p>
+            <span class="price">$4.50</span>
+          </div>
 
+          <div class="product-item">
+            <div class="product-cover orange"></div>
+            <h3>Orange Burst</h3>
+            <p>Sweet and refreshing orange juice packed with vitamin C.</p>
+            <span class="price">$4.75</span>
+          </div>
 
-<section class="menu-category">
+          <div class="product-item">
+            <div class="product-cover grapefruit"></div>
+            <h3>Grapefruit Splash</h3>
+            <p>Bold grapefruit flavor with a refreshing tang.</p>
+            <span class="price">$4.90</span>
+          </div>
+        </div>
+      </section>
 
-<h2>Citrus Classics</h2>
+      <section class="menu-category">
+        <h2>Tropical Favorites</h2>
 
-<div class="products">
+        <div class="products">
+          <div class="product-item">
+            <div class="product-cover mango"></div>
+            <h3>Mango Glow</h3>
+            <p>Smooth tropical mango drink with natural sweetness.</p>
+            <span class="price">$5.25</span>
+          </div>
 
-<div class="product-item">
-<div class="product-cover lemon"></div>
-<h3>Lemon Fresh</h3>
-<p>A crisp lemon juice with bright citrus flavor.</p>
-<span class="price">$4.50</span>
-</div>
+          <div class="product-item">
+            <div class="product-cover pineapple"></div>
+            <h3>Pineapple Wave</h3>
+            <p>Sweet pineapple juice with a refreshing finish.</p>
+            <span class="price">$5.10</span>
+          </div>
 
-<div class="product-item">
-<div class="product-cover orange"></div>
-<h3>Orange Burst</h3>
-<p>Sweet and refreshing orange juice packed with vitamin C.</p>
-<span class="price">$4.75</span>
-</div>
+          <div class="product-item">
+            <div class="product-cover citrusmix"></div>
+            <h3>Citrus Mix</h3>
+            <p>A vibrant blend of orange, lemon and lime.</p>
+            <span class="price">$5.30</span>
+          </div>
+        </div>
+      </section>
 
-<div class="product-item">
-<div class="product-cover grapefruit"></div>
-<h3>Grapefruit Splash</h3>
-<p>Bold grapefruit flavor with a refreshing tang.</p>
-<span class="price">$4.90</span>
-</div>
+      <section class="menu-category">
+        <h2>Berry Collection</h2>
 
-</div>
-</section>
+        <div class="products">
+          <div class="product-item">
+            <div class="product-cover strawberry"></div>
+            <h3>Strawberry Fresh</h3>
+            <p>Light and juicy strawberry drink with natural sweetness.</p>
+            <span class="price">$5.00</span>
+          </div>
 
+          <div class="product-item">
+            <div class="product-cover berry"></div>
+            <h3>Berry Splash</h3>
+            <p>A refreshing blend of berries with vibrant flavor.</p>
+            <span class="price">$5.20</span>
+          </div>
+        </div>
+      </section>
+    </main>
 
-<section class="menu-category">
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-brand">
+          <img src="/assets/images/logo.svg" height="40" />
+          <p>
+            Fresh juices made from real fruits. Simple, natural and refreshing.
+          </p>
+        </div>
 
-<h2>Tropical Favorites</h2>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/menu/index.html">Menu</a></li>
+            <li><a href="/about/index.html">About</a></li>
+            <li><a href="/contact/index.html">Contact</a></li>
+          </ul>
+        </div>
 
-<div class="products">
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
 
-<div class="product-item">
-<div class="product-cover mango"></div>
-<h3>Mango Glow</h3>
-<p>Smooth tropical mango drink with natural sweetness.</p>
-<span class="price">$5.25</span>
-</div>
+        <div class="footer-links">
+          <h4>Follow</h4>
+          <ul>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">TikTok</a></li>
+          </ul>
+        </div>
+      </div>
 
-<div class="product-item">
-<div class="product-cover pineapple"></div>
-<h3>Pineapple Wave</h3>
-<p>Sweet pineapple juice with a refreshing finish.</p>
-<span class="price">$5.10</span>
-</div>
-
-<div class="product-item">
-<div class="product-cover citrusmix"></div>
-<h3>Citrus Mix</h3>
-<p>A vibrant blend of orange, lemon and lime.</p>
-<span class="price">$5.30</span>
-</div>
-
-</div>
-
-</section>
-
-
-<section class="menu-category">
-
-<h2>Berry Collection</h2>
-
-<div class="products">
-
-<div class="product-item">
-<div class="product-cover strawberry"></div>
-<h3>Strawberry Fresh</h3>
-<p>Light and juicy strawberry drink with natural sweetness.</p>
-<span class="price">$5.00</span>
-</div>
-
-<div class="product-item">
-<div class="product-cover berry"></div>
-<h3>Berry Splash</h3>
-<p>A refreshing blend of berries with vibrant flavor.</p>
-<span class="price">$5.20</span>
-</div>
-
-</div>
-
-</section>
-
-</main>
-
-
-<footer class="footer">
-
-<div class="footer-container">
-
-<div class="footer-brand">
-<img src="/assets/images/logo.svg" height="40">
-<p>Fresh juices made from real fruits. Simple, natural and refreshing.</p>
-</div>
-
-<div class="footer-links">
-<h4>Company</h4>
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/menu/index.html">Menu</a></li>
-<li><a href="/about/index.html">About</a></li>
-<li><a href="/contact/index.html">Contact</a></li>
-</ul>
-</div>
-
-<div class="footer-links">
-<h4>Legal</h4>
-<ul>
-<li><a href="#">Privacy Policy</a></li>
-<li><a href="#">Terms of Service</a></li>
-</ul>
-</div>
-
-<div class="footer-links">
-<h4>Follow</h4>
-<ul>
-<li><a href="#">Instagram</a></li>
-<li><a href="#">Facebook</a></li>
-<li><a href="#">TikTok</a></li>
-</ul>
-</div>
-
-</div>
-
-<div class="footer-bottom">
-<p>© 2026 CitrusWave. All rights reserved.</p>
-</div>
-
-</footer>
-
-</body>
+      <div class="footer-bottom">
+        <p>© 2026 CitrusWave. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
